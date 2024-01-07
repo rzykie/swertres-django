@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+{% load i18n admin_reorder static %}
+
+{% block title %}{{ title }} | {% trans "swertres Administration" %}{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}" />
+{% endblock extrastyle %}
+
+{% block branding %}
+{% admin_reorder %}
+<h1 id="site-name">{% trans "swertres Administration" %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
